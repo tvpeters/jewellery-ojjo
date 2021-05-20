@@ -1,0 +1,62 @@
+.our-salon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 541px;
+    background-image: url(../images/bg-our-salon-subscribe@1.png);
+    background-color: var(--accent-color);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 120px;
+}
+
+.our-salon__heading-mini {
+    margin-top: 0px;
+    margin-bottom: 15px;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 140%;
+    text-align: center;
+    color: var(--white-color);
+}
+
+.our-salon__heading {
+    margin-top: 0px;
+    margin-bottom: 45px;
+    font-family: 'Noto Serif', Georgia, serif;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: center;
+    color: var(--white-color);
+}
+
+.our-salon__text {
+    max-width: 730px;
+    margin-top: 0px;
+    margin-bottom: 60px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    color: var(--white-color);
+}
+
+.our-salon__our-salons {
+    align-self: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    text-decoration: none;
+    background: var(--white-color);
+    border: 1px solid var(--accent-color);
+    box-sizing: border-box;
+    padding: 15px 35px;
+}
