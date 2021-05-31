@@ -4,14 +4,14 @@
         justify-content: center;
         align-items: center;
         min-height: 478px;
-        background-image: url(../images/bg-our-salon-subscribe@1.png);
-        background-color: var(--accent-color);
+        background-image: url(../img/bg-our-salon-subscribe@1.png);
+        background-color: $accent-color;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         margin-bottom: 80px;
     }
-    
+
     .subscribe__heading-mini {
         margin-top: 0px;
         margin-bottom: 15px;
@@ -19,9 +19,9 @@
         font-size: 21px;
         line-height: 140%;
         text-align: center;
-        color: var(--white-color);
+        color: $white-color;
     }
-    
+
     .subscribe__heading {
         margin-top: 0px;
         margin-bottom: 60px;
@@ -30,47 +30,47 @@
         font-size: 30px;
         line-height: 41px;
         text-align: center;
-        color: var(--white-color);
+        color: $white-color;
     }
-    
+
     .subscribe__wrapper {
         display: flex;
         gap: 80px;
     }
-    
+
     .subscribe__features {
         list-style-type: none;
         margin: 0px;
         padding: 0px;
     }
-    
+
     .subscribe__text {
         font-weight: normal;
         font-size: 18px;
         line-height: 140%;
-        color: var(--white-color);
+        color: $white-color;
         margin-bottom: 15px;
     }
-    
+
     .subscribe__text::before {
         content: '';
         position: relative;
-        background: url(../images/svg/icon-bullet.svg) center center/contain no-repeat;
+        background: url(../img/svg/icon-bullet.svg) center center/contain no-repeat;
         padding: 10px;
         left: -20px;
     }
-    
+
     .subscribe__container {
-        border: 1px solid var(--white-color);
+        border: 1px solid $white-color;
         padding: 15px 14px;
         box-sizing: border-box;
     }
-    
+
     .subscribe__form {
-        background-color: var(--white-color);
+        background-color: $white-color;
         padding: 20px 22px;
     }
-    
+
     .subscribe__input {
         padding-left: 20px;
         padding-top: 15px;
@@ -81,15 +81,15 @@
         line-height: 16px;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        color: var(--accent-color-op);
-        border: 1px solid var(--gray-color);
+        color: $accent-color-op;
+        border: 1px solid $gray-color;
         box-sizing: border-box;
     }
-    
+
     .subscribe__submit {
         padding: 14px 35px;
-        background: var(--accent-color);
-        border: 1px solid var(--white-color);
+        background: $accent-color;
+        border: 1px solid $white-color;
         box-sizing: border-box;
         font-weight: 500;
         font-size: 14px;
@@ -97,5 +97,5 @@
         text-align: center;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        color: var(--white-color);
+        color: $white-color;
     }

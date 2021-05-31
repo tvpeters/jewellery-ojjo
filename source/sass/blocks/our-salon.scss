@@ -4,8 +4,8 @@
     justify-content: center;
     align-items: center;
     min-height: 541px;
-    background-image: url(../images/bg-our-salon-subscribe@1.png);
-    background-color: var(--accent-color);
+    background-image: url(../img/bg-our-salon-subscribe@1.png);
+    background-color: $accent-color;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,7 +19,7 @@
     font-size: 21px;
     line-height: 140%;
     text-align: center;
-    color: var(--white-color);
+    color: $white-color;
 }
 
 .our-salon__heading {
@@ -30,7 +30,7 @@
     font-size: 30px;
     line-height: 41px;
     text-align: center;
-    color: var(--white-color);
+    color: $white-color;
 }
 
 .our-salon__text {
@@ -42,7 +42,7 @@
     font-size: 18px;
     line-height: 140%;
     text-align: center;
-    color: var(--white-color);
+    color: $white-color;
 }
 
 .our-salon__our-salons {
@@ -53,10 +53,10 @@
     text-align: center;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: var(--accent-color);
+    color: $accent-color;
     text-decoration: none;
-    background: var(--white-color);
-    border: 1px solid var(--accent-color);
+    background: $white-color;
+    border: 1px solid $accent-color;
     box-sizing: border-box;
     padding: 15px 35px;
 }

@@ -15,8 +15,8 @@
     line-height: 140%;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: var(--accent-color);
-    border-bottom: 1px solid var(--accent-color);
+    color: $accent-color;
+    border-bottom: 1px solid $accent-color;
     padding-bottom: 10px;
 }
 
@@ -35,7 +35,7 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 150%;
-    color: var(--accent-color);
+    color: $accent-color;
     text-decoration: none;
 }
 
@@ -68,14 +68,14 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 150%;
-    color: var(--accent-color);
+    color: $accent-color;
     text-decoration: none;
 }
 
 .footer__text-phone::before {
     content: '';
     position: relative;
-    background: url(../images/svg/icon-oldphone.svg) center center/contain no-repeat;
+    background: url(../img/svg/icon-oldphone.svg) center center/contain no-repeat;
     padding: 10px;
     left: -35px;
     top: 20px;
@@ -86,14 +86,14 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 150%;
-    color: var(--accent-color);
+    color: $accent-color;
     text-decoration: none;
 }
 
 .footer__text-email::before {
     content: '';
     position: relative;
-    background: url(../images/svg/icon-mail.svg) center center/contain no-repeat;
+    background: url(../img/svg/icon-mail.svg) center center/contain no-repeat;
     padding: 10px;
     left: -35px;
     top: 20px;
@@ -106,11 +106,11 @@
 }
 
 .footer_social {
-    fill: var(--accent-color);
+    fill: $accent-color;
 }
 
 .footer__footer {
-    border-top: 1px solid var(--accent-color);
+    border-top: 1px solid $accent-color;
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
@@ -123,5 +123,5 @@
     line-height: 150%;
     text-align: right;
     text-decoration-line: underline;
-    color: var(--accent-color);
+    color: $accent-color;
 }

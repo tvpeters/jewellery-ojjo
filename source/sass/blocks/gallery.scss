@@ -10,7 +10,7 @@
     font-size: 21px;
     line-height: 140%;
     text-align: center;
-    color: var(--accent-color);
+    color: $accent-color;
 }
 
 .gallery__heading {
@@ -21,7 +21,7 @@
     font-size: 30px;
     line-height: 41px;
     text-align: center;
-    color: var(--accent-color);
+    color: $ccent-color;
 }
 
 .gallery__content {
@@ -45,7 +45,7 @@
 
 .gallery__playbutton {
     position: absolute;
-    fill: var(--white-color);
+    fill: $white-color;
 }
 
 .gallery__playbutton:hover {
@@ -60,6 +60,6 @@
 }
 
 .gallery__picture {
-    background-color: var(--hard-gray-color);
+    background-color: $hard-gray-color;
     height: 300px;
 }
