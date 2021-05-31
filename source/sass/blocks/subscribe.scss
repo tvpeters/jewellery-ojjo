@@ -5,7 +5,7 @@
         align-items: center;
         min-height: 478px;
         background-image: url(../images/bg-our-salon-subscribe@1.png);
-        background-color: $accent-color;
+        background-color: var(--accent-color);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -88,7 +88,7 @@
     
     .subscribe__submit {
         padding: 14px 35px;
-        background: $accent-color;
+        background: var(--accent-color);
         border: 1px solid var(--white-color);
         box-sizing: border-box;
         font-weight: 500;
