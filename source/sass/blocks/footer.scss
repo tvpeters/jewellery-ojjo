@@ -39,6 +39,14 @@
     text-decoration: none;
 }
 
+.footer__menu {
+    text-decoration: none;
+}
+
+.footer__menu:hover {
+    text-decoration: underline;
+}
+
 .footer_paycards {
     display: flex;
     gap: 20px;
@@ -108,6 +116,11 @@
 .footer_social {
     fill: $accent-color;
 }
+
+.footer_social:hover {
+    transform: scale(1.2);
+}
+
 
 .footer__footer {
     border-top: 1px solid $accent-color;

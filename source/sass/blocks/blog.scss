@@ -40,6 +40,11 @@
     justify-content: flex-end;
 }
 
+.blog__article:hover {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);  
+}
+
 .blog__image {
     position: absolute;
     height: 370px;
@@ -77,4 +82,10 @@
     border: 1px solid $white-color;
     text-decoration: none;
     padding: 15px 35px;
+}
+
+.blog__read:hover {
+    border: 1px solid $accent-color;
+    color: $accent-color;
+    background: $white-color;
 }
