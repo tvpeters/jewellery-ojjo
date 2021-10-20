@@ -63,16 +63,15 @@
 
 .footer__contacts {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-direction: column;
     list-style-type: none;
     padding: 0px;
-    margin-top: -10px;
-    min-height: 130px;
+    min-height: 100px;
 }
 
 .footer__text-phone {
-    padding-left: 35px;
+    padding-left: 20px;
     font-weight: normal;
     font-size: 14px;
     line-height: 150%;
@@ -85,12 +84,12 @@
     position: relative;
     background: url(../img/icon-oldphone.svg) center center/contain no-repeat;
     padding: 10px;
-    left: -35px;
-    top: 20px;
+    left: -20px;
+    top: 0px;
 }
 
 .footer__text-email {
-    padding-left: 35px;
+    padding-left: 20px;
     font-weight: normal;
     font-size: 14px;
     line-height: 150%;
@@ -103,8 +102,8 @@
     position: relative;
     background: url(../img/icon-mail.svg) center center/contain no-repeat;
     padding: 10px;
-    left: -35px;
-    top: 20px;
+    left: -20px;
+    top: 0px;
 }
 
 .footer_socials {

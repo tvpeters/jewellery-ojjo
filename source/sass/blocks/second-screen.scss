@@ -31,36 +31,34 @@
     padding: 0px;
     margin-top: 0px;
     margin-bottom: 55px;
-    list-style-type: none;
 }
 
 .second-screen__menu {
     display: flex;
-    justify-content: center;
+}
+
+.second-screen__item {
+    display: flex;
     align-items: center;
+    justify-content: center;
     width: 165px;
     height: 55px;
-    border: 1px solid $gray-color;
-    color: $accent-color;
-    box-shadow: 1px $gray-color;
-    box-sizing: border-box;
-    box-shadow: 6px 6px 0px -2px $white-color, 6px 6px 0px -1px $gray-color;
-}
-
-.second-screen__menu:hover {
-    background-color: $accent-color;
-    color: $white-color;
-    box-shadow: none;
-}
-
-.secon-screen__item {
     text-decoration: none;
+    text-transform: uppercase;
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
-    text-align: center;
     letter-spacing: 0.1em;
-    text-transform: uppercase;
+    color: $accent-color;
+    border: 1px solid $gray-color;
+    box-shadow: $second-screen-menu-outline;
+    box-shadow: $second-screen-menu-fill;
+}
+
+.second-screen__item:hover {
+    background-color: $accent-color;
+    color: $white-color;
+    box-shadow: none;
 }
 
 .second-screen__googs {
@@ -79,13 +77,13 @@
 }
 
 .second-screen__picture:hover {
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    box-shadow: $second-screen-box-shadow;
+    text-shadow: $second-screen-text-shadow;
 }
 
 .second-screen__gradient {
     position: relative;
-    background: linear-gradient(180deg, rgba(180, 180, 180, 0) 20.31%, $accent-color 100%);
+    background: $second-screen-gradient;
     height: 100%;
 }
 

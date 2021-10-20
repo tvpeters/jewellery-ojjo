@@ -14,6 +14,10 @@
     padding-top: 25px;
 }
 
+.first-screen__logo {
+    fill: $white-color;
+}
+
 .first-screen__icons {
     fill: $white-color;
 }
@@ -44,6 +48,7 @@
 
 .first-screen__right {
     display: flex;
+    align-items: center;
     gap: 40px;
     list-style-type: none;
     padding: 0px;

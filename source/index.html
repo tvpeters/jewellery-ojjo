@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<!-- TODO: validate!
-     TODO: hand cursor for subscribe__submit
--->
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <meta name="format-detection" content="telephone=no"> TODO: выяснить что это-->
+  <meta name="format-detection" content="telephone=no">
   <link rel="preload" href="fonts/Gilroy-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/NotoSerif-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.min.css">
@@ -34,38 +30,40 @@
         <li><a class="first-screen__text" href="#">Дизайнерам</a></li>
         <li><a class="first-screen__text" href="#">Вакансии</a></li>
       </ul>
-      <a class="first-screen__logo" href="index.html">
-        <svg id="logo" class="first-screen__icons" width="216" height="52">
-          <use xlink:href="img/sprite_auto.svg#logo"></use>
+
+      <a href="index.html">
+        <svg class="first-screen__logo" width="216" height="52">
+          <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
         </svg>
       </a>
+
       <ul class="first-screen__right">
         <li>
           <a class="first-screen__text" href="#">
             <div class="first-screen__search">
-              <svg id="icon-search" class="first-screen__icons" width="24" height="24">
+              <svg class="first-screen__icons" width="24" height="24">
                 <use xlink:href="img/sprite_auto.svg#icon-search"></use>
               </svg>Поиск
             </div>
           </a>
         </li>
         <li><a class="first-screen__text" href="#">Вход/Регистрация</a></li>
-        <div class="first-screen__account">
-          <li>
-            <a href="#">
-              <svg id="icon-account" class="first-screen__icons" width="24" height="24">
-                <use xlink:href="img/sprite_auto.svg#icon-account"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <svg id="icon-like" class="first-screen__icons" width="18" height="18">
-                <use xlink:href="img/sprite_auto.svg#icon-like"></use>
-              </svg>
-            </a>
-          </li>
-        </div>
+        <li class="first-screen__account">
+        <li>
+          <a href="#">
+            <svg class="first-screen__icons" width="24" height="24">
+              <use xlink:href="img/sprite_auto.svg#icon-account"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg class="first-screen__icons" width="18" height="18">
+              <use xlink:href="img/sprite_auto.svg#icon-like"></use>
+            </svg>
+          </a>
+        </li>
+        </li>
       </ul>
     </nav>
     <div class="first-screen__content"></div>
@@ -103,24 +101,12 @@
       <h2 class="second-screen__heading">Настоящая красота здесь!</h2>
       <nav>
         <ul class="second-screen__catalog">
-          <a href="#" class="secon-screen__item">
-            <li class="second-screen__menu">Свадьба</li>
-          </a>
-          <a href="#" class="secon-screen__item">
-            <li class="second-screen__menu">Мужу</li>
-          </a>
-          <a href="#" class="secon-screen__item">
-            <li class="second-screen__menu">Жене</li>
-          </a>
-          <a href="#" class="secon-screen__item">
-            <li class="second-screen__menu">Партнеру</li>
-          </a>
-          <a href="#" class="secon-screen__item">
-            <li class="second-screen__menu">Коллекции</li>
-          </a>
-          <a href="#" class="secon-screen__item">
-            <li class="second-screen__menu">Редкость</li>
-          </a>
+          <li class="second-screen__menu"><a href="#" class="second-screen__item">Свадьба</a></li>
+          <li class="second-screen__menu"><a href="#" class="second-screen__item">Мужу</a></li>
+          <li class="second-screen__menu"><a href="#" class="second-screen__item">Жене</a></li>
+          <li class="second-screen__menu"><a href="#" class="second-screen__item">Партнеру</a></li>
+          <li class="second-screen__menu"><a href="#" class="second-screen__item">Коллекции</a></li>
+          <li class="second-screen__menu"><a href="#" class="second-screen__item">Редкость</a></li>
         </ul>
       </nav>
       <div class="second-screen__googs">
@@ -255,7 +241,7 @@
               alt="video">
           </picture>
           <div class="gallery__gradient"></div>
-          <a href="#" class="gallery__playbutton"><svg id="icon-button-play" width="80" height="80">
+          <a href="#" class="gallery__playbutton"><svg width="80" height="80">
               <use xlink:href="img/sprite_auto.svg#icon-button-play"></use>
             </svg></a>
         </div>
@@ -286,7 +272,7 @@
               alt="video">
           </picture>
           <div class="gallery__gradient"></div>
-          <a href="#" class="gallery__playbutton"><svg id="icon-button-play" width="80" height="80">
+          <a href="#" class="gallery__playbutton"><svg width="80" height="80">
               <use xlink:href="img/sprite_auto.svg#icon-button-play"></use>
             </svg></a>
         </div>
@@ -317,18 +303,10 @@
       <div class="footer__content">
         <h3 class="footer__heading">Полезные ссылки</h3>
         <ul class="footer__urls">
-          <a class="footer__text footer__menu" href="#">
-            <li>Доставка</li>
-          </a>
-          <a class="footer__text footer__menu" href="#">
-            <li>Оплата</li>
-          </a>
-          <a class="footer__text footer__menu" href="#">
-            <li>Акции</li>
-          </a>
-          <a class="footer__text footer__menu" href="#">
-            <li>Политика конфиденциальности</li>
-          </a>
+          <li><a class="footer__text footer__menu" href="#">Доставка</a></li>
+          <li><a class="footer__text footer__menu" href="#">Оплата</a></li>
+          <li><a class="footer__text footer__menu" href="#">Акции</a></li>
+          <li><a class="footer__text footer__menu" href="#">Политика конфиденциальности</a></li>
         </ul>
       </div>
 
@@ -354,15 +332,9 @@
       <div class="footer__content">
         <h3 class="footer__heading">Контакты</h3>
         <ul class="footer__contacts">
-          <a class="footer__text-phone footer__menu" href="tel:+78122345655">
-            <li>8 (812) 234-56-55</li>
-          </a>
-          <a class="footer__text-phone footer__menu" href="tel:+78122345655">
-            <li>8 (812) 234-56-55</li>
-          </a>
-          <a class="footer__text-email footer__menu" href="mailto:ojjo@ojjo.ru">
-            <li>ojjo@ojjo.ru</li>
-          </a>
+          <li class="footer__menu"><a class="footer__text-phone" href="tel:+78122345655">8 (812) 234-56-55</a></li>
+          <li><a class="footer__text-phone footer__menu" href="tel:+78122345655">8 (812) 234-56-55</a></li>
+          <li><a class="footer__text-email footer__menu" href="mailto:ojjo@ojjo.ru">ojjo@ojjo.ru</a></li>
         </ul>
       </div>
 
@@ -372,19 +344,19 @@
           <p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper justo, nec,
             pellentesque.</p>
           <div class="footer_socials">
-            <a href="#" class="footer_social"><svg id="icon-youtube" width="26" height="26">
+            <a href="#" class="footer_social"><svg width="26" height="26">
                 <use xlink:href="img/sprite_auto.svg#icon-youtube"></use>
               </svg><span class="visually-hidden">Мы на YouTube</span></a>
-            <a href="#" class="footer_social"><svg id="icon-vk" width="24" height="24">
+            <a href="#" class="footer_social"><svg width="24" height="24">
                 <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
               </svg><span class="visually-hidden">Мы во Вконтакте</span></a>
-            <a href="#" class="footer_social"><svg id="icon-fb" width="26" height="26">
+            <a href="#" class="footer_social"><svg width="26" height="26">
                 <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
               </svg><span class="visually-hidden">Мы в Фейсбуке</span></a>
-            <a href="#" class="footer_social"><svg id="icon-tg" width="24" height="24">
+            <a href="#" class="footer_social"><svg width="24" height="24">
                 <use xlink:href="img/sprite_auto.svg#icon-tg"></use>
               </svg><span class="visually-hidden">Мы в Телеграме</span></a>
-            <a href="#" class="footer_social"><svg id="icon-etsy" width="16" height="16">
+            <a href="#" class="footer_social"><svg width="16" height="16">
                 <use xlink:href="img/sprite_auto.svg#icon-etsy"></use>
               </svg><span class="visually-hidden">Мы на Etsy</span></a>
           </div>
