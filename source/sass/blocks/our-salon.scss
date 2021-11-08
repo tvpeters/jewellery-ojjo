@@ -10,83 +10,83 @@
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: $section-mb-desktop;
-}
 
-.our-salon__heading-mini {
-  margin-top: 0px;
-  margin-bottom: 15px;
-  font-weight: normal;
-  font-size: 21px;
-  line-height: 140%;
-  text-align: center;
-  color: $white-color;
-}
+  &__heading-mini {
+    margin-top: 0px;
+    margin-bottom: 15px;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 140%;
+    text-align: center;
+    color: $white-color;
+  }
 
-.our-salon__heading {
-  margin-top: 0px;
-  margin-bottom: 45px;
-  font-family: 'Noto Serif', Georgia, serif;
-  font-weight: bold;
-  font-size: 30px;
-  line-height: 41px;
-  text-align: center;
-  color: $white-color;
-}
+  &__heading {
+    margin-top: 0px;
+    margin-bottom: 45px;
+    font-family: 'Noto Serif', Georgia, serif;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: center;
+    color: $white-color;
+  }
 
-.our-salon__text {
-  max-width: 730px;
-  margin-top: 0px;
-  margin-bottom: 60px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 140%;
-  text-align: center;
-  color: $white-color;
-}
+  &__text {
+    max-width: 730px;
+    margin-top: 0px;
+    margin-bottom: 60px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    color: $white-color;
+  }
 
-.our-salon__our-salons {
-  align-self: center;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: $accent-color;
-  text-decoration: none;
-  background: $white-color;
-  border: 1px solid $accent-color;
-  box-sizing: border-box;
-  padding: 15px 35px;
-}
+  &__our-salons {
+    align-self: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $accent-color;
+    text-decoration: none;
+    background: $white-color;
+    border: 1px solid $accent-color;
+    box-sizing: border-box;
+    padding: 15px 35px;
 
-.our-salon__our-salons:hover {
-  color: $white-color;
-  background: $accent-color;
-  border: 1px solid $white-color;
+    &:hover {
+      color: $white-color;
+      background: $accent-color;
+      border: 1px solid $white-color;
+    }
+  }
 }
 
 @media (max-width: $mobile-width) {
   .our-salon {
     min-height: 451px;
     margin-bottom: $section-mb-mobile;
-  }
 
-  .our-salon__heading-mini {
-    font-size: 18px;
-  }
+    &__heading-mini {
+      font-size: 18px;
+    }
 
-  .our-salon__heading {
-    font-size: 24px;
-    line-height: 33px;
-    margin-bottom: 30px;
-  }
+    &__heading {
+      font-size: 24px;
+      line-height: 33px;
+      margin-bottom: 30px;
+    }
 
-  .our-salon__text {
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 30px;
-    line-height: 120%;
+    &__text {
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-bottom: 30px;
+      line-height: 120%;
+    }
   }
 }

@@ -2,145 +2,142 @@
   display: flex;
   flex-direction: column;
   margin-bottom: $section-mb-desktop;
-}
 
-.second-screen__heading-mini {
-  margin-top: 0px;
-  margin-bottom: 15px;
-  font-size: 21px;
-  line-height: 140%;
-  text-align: center;
-  font-style: normal;
-  font-weight: normal;
-  color: $accent-color;
-}
+  &__heading-mini {
+    margin-top: 0px;
+    margin-bottom: 15px;
+    font-size: 21px;
+    line-height: 140%;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    color: $accent-color;
+  }
 
-.second-screen__heading {
-  margin-top: 0px;
-  margin-bottom: 60px;
-  font-family: 'Noto Serif', Georgia, serif;
-  font-weight: bold;
-  font-size: 30px;
-  line-height: 41px;
-  text-align: center;
-  color: $accent-color;
-}
+  &__heading {
+    margin-top: 0px;
+    margin-bottom: 60px;
+    font-family: 'Noto Serif', Georgia, serif;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: center;
+    color: $accent-color;
+  }
 
-.second-screen__catalog {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding: 0px;
-  margin-top: 0px;
-  margin-bottom: 55px;
-  gap: 15px;
-}
+  &__catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 55px;
+    gap: 15px;
+  }
 
-.second-screen__menu {
-  display: flex;
-}
+  &__menu {
+    display: flex;
+  }
 
-.second-screen__item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 165px;
-  height: 55px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
-  letter-spacing: 0.1em;
-  color: $accent-color;
-  border: 1px solid $gray-color;
-  box-shadow: $second-screen-menu-outline;
-  box-shadow: $second-screen-menu-fill;
-}
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 165px;
+    height: 55px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    color: $accent-color;
+    border: 1px solid $gray-color;
+    box-shadow: $second-screen-menu-outline;
+    box-shadow: $second-screen-menu-fill;
 
-.second-screen__item:hover {
-  background-color: $accent-color;
-  color: $white-color;
-  box-shadow: none;
-}
+    &:hover {
+      background-color: $accent-color;
+      color: $white-color;
+      box-shadow: none;
+    }
+  }
 
-.second-screen__googs {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
+  &__googs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
 
-.second-screen__picture {
-  display: flex;
-  flex-direction: column;
-  width: 350px;
-  height: 280px;
-  justify-content: flex-end;
-}
+  &__picture {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 280px;
+    justify-content: flex-end;
 
-.second-screen__picture:hover {
-  box-shadow: $second-screen-box-shadow;
-  text-shadow: $second-screen-text-shadow;
-}
+    &:hover {
+      box-shadow: $second-screen-box-shadow;
+      text-shadow: $second-screen-text-shadow;
+    }
+  }
 
-.second-screen__gradient {
-  position: relative;
-  background: $second-screen-gradient;
-  height: 100%;
-}
+  &__gradient {
+    position: relative;
+    background: $second-screen-gradient;
+    height: 100%;
+  }
 
-.second-screen__image {
-  position: absolute;
-  height: 280px;
-}
+  &__image {
+    position: absolute;
+    height: 280px;
+  }
 
-.second-screen__text {
-  position: absolute;
-  align-self: center;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
-  text-align: center;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: $white-color;
-  margin-top: 0px;
-  margin-bottom: 30px;
+  &__text {
+    position: absolute;
+    align-self: center;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $white-color;
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: $mobile-width) {
-
   .second-screen {
     margin-bottom: $section-mb-mobile;
+
+    &__heading-mini {
+      font-size: 18px;
+    }
+
+    &__heading {
+      font-size: 24px;
+      line-height: 33px;
+      margin-bottom: 30px;
+    }
+
+    &__catalog {
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-bottom: 25px;
+    }
+
+    &__googs {
+      gap: 15px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
+    &__picture {
+      max-width: 350px;
+      height: 280px;
+    }
   }
-
-  .second-screen__heading-mini {
-    font-size: 18px;
-  }
-
-  .second-screen__heading {
-    font-size: 24px;
-    line-height: 33px;
-    margin-bottom: 30px;
-  }
-
-  .second-screen__catalog {
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 25px;
-  }
-
-  .second-screen__googs {
-    gap: 15px;
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-
-  .second-screen__picture {
-    max-width: 350px;
-    height: 280px;
-
-  }
-
 }
