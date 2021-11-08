@@ -83,7 +83,6 @@
       text-transform: uppercase;
       color: $accent-color-op;
       border: 1px solid $gray-color;
-      box-sizing: border-box;
     }
 
     .subscribe__submit {
@@ -101,19 +100,63 @@
       cursor: pointer;
     }
 
-    @media (max-width: 1024px) {
-      .subscribe {
-        min-height: 420px;
-        margin-bottom: 40px;
+    @media (max-width: $table-width) {
+      .subscribe__wrapper {
+        gap: 20px;
       }
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: $mobile-width) {
       .subscribe {
-        min-height: 400px;
+        min-height: 480px;
+        margin-bottom: $section-mb-mobile;
+      }
+
+      .subscribe__heading-mini {
+        font-size: 18px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      .subscribe__heading {
+        font-size: 24px;
+        line-height: 33px;
+        margin-bottom: 30px;
+      }
+
+      .subscribe__features {
+        margin-right: 60px;
       }
 
       .subscribe__wrapper {
-        gap: 30px;
+        flex-wrap: wrap;
+        gap: 0px;
+        justify-content: center;
+      }
+
+      .subscribe__container {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      .subscribe__form {
+        padding: 20px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .subscribe__input {
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding-left: 0px;
+        text-align: center;
+      }
+
+      .subscribe__submit {
+        margin-top: 0px;
+        margin-left: 0px;
+        padding: 17px 42px;
       }
     }

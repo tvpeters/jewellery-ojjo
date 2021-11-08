@@ -1,7 +1,7 @@
 .second-screen {
   display: flex;
   flex-direction: column;
-  margin-bottom: 120px;
+  margin-bottom: $section-mb-desktop;
 }
 
 .second-screen__heading-mini {
@@ -109,23 +109,38 @@
   margin-bottom: 30px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $mobile-width) {
+
+  .second-screen {
+    margin-bottom: $section-mb-mobile;
+  }
+
+  .second-screen__heading-mini {
+    font-size: 18px;
+  }
+
   .second-screen__heading {
+    font-size: 24px;
+    line-height: 33px;
     margin-bottom: 30px;
   }
 
   .second-screen__catalog {
-    margin-bottom: 35px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 25px;
   }
 
-  .second-screen {
-    margin-bottom: 60px;
+  .second-screen__googs {
+    gap: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
-}
 
-@media (max-width: 414px) {
-  .second-screen__heading {
-    font-size: 24px;
-    line-height: 33px;
+  .second-screen__picture {
+    max-width: 350px;
+    height: 280px;
+
   }
+
 }

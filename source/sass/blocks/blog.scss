@@ -1,7 +1,7 @@
 .blog {
   display: flex;
   flex-direction: column;
-  margin-bottom: 120px;
+  margin-bottom: $section-mb-desktop;
 }
 
 .blog__heading-mini {
@@ -90,22 +90,23 @@
   background: $white-color;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $mobile-width) {
   .blog {
-    margin-bottom: 60px;
+    margin-bottom: $section-mb-mobile;
   }
 
   .blog__heading {
+    font-size: 24px;
+    line-height: 33px;
     margin-bottom: 30px;
   }
 
-  .blog__articles {
-    margin-bottom: 40px;
+  .blog__heading-mini {
+    font-size: 18px;
   }
-}
 
-@media (max-width: 768px) {
-  .blog__heading {
-    font-size: 28px;
+  .blog__articles {
+    gap: 15px;
+    margin-bottom: 30px;
   }
 }

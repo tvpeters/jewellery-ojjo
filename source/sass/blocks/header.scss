@@ -4,7 +4,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 100px;
+  margin-bottom: 95px;
 }
 
 .first-screen__header {
@@ -14,6 +14,10 @@
   padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.first-screen__hmenu {
+  display: none;
 }
 
 .first-screen__logo {
@@ -131,28 +135,49 @@
   background: $white-color;
 }
 
-@media (max-width: 1024px) {
-  .first-screen {
-    margin-bottom: 50px;
+@media (max-width: $table-width) {
+  .first-screen__header {
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   .first-screen__logo {
-    display: none;
+    order: 1;
+    margin-top: 10px;
   }
 
-  .first-screen__header {
-    justify-content: space-around;
+  .first-screen__right {
+    margin-top: 20px;
+    margin-bottom: 5px;
   }
+
+  .first-screen__left {
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
 }
 
-@media (max-width: 414px) {
-
+@media (max-width: $mobile-width) {
   .first-screen {
     background: linear-gradient(0deg, rgba(51, 51, 51, 0.87), rgba(51, 51, 51, 0.87)), url(../img/bg-mob-first-screen@1.jpg);
     background-color: $accent-color;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .first-screen__header {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+  .first-screen__hmenu {
+    display: block;
+    fill: $white-color;
   }
 
   .first-screen__brands {
@@ -177,6 +202,8 @@
     font-size: 36px;
     line-height: 49px;
     text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .first-screen__content {
